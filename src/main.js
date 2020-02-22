@@ -16,7 +16,8 @@ const player = {
         '#btnPause': 'pause',
         '#btnNormal': 'normal',
         '#btnFast': 'fast',
-        '#btnSkipAnima': 'skipAnima'
+        '#btnSkipAnima': 'skipAnima',
+        '#btnReset': 'reset'
     },
     init: () => {
         player.view.code.innerText = string.slice(0, player.n)
@@ -61,6 +62,10 @@ const player = {
         player.pause()
         player.n = string.length
         player.writeCode(player.n)
+    },
+    reset: () => {
+       player.n = 1
+       player.play()
     },
     writeCode: (stringLength) => {
         player.view.code.innerHTML = Prism.highlight(string.slice(0, stringLength), Prism.languages.css);

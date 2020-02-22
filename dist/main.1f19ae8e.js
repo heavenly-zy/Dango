@@ -1094,7 +1094,8 @@ var player = {
     '#btnPause': 'pause',
     '#btnNormal': 'normal',
     '#btnFast': 'fast',
-    '#btnSkipAnima': 'skipAnima'
+    '#btnSkipAnima': 'skipAnima',
+    '#btnReset': 'reset'
   },
   init: function init() {
     player.view.code.innerText = _css.default.slice(0, player.n);
@@ -1143,6 +1144,10 @@ var player = {
     player.pause();
     player.n = _css.default.length;
     player.writeCode(player.n);
+  },
+  reset: function reset() {
+    player.n = 1;
+    player.play();
   },
   writeCode: function writeCode(stringLength) {
     player.view.code.innerHTML = Prism.highlight(_css.default.slice(0, stringLength), Prism.languages.css);

@@ -7,9 +7,19 @@
     <title>dango</title>
     <link rel="stylesheet" href="/style.e308ff8e.css">
     <style>/*CSS reset*/
-        .code-wrapper * {box-sizing: border-box;}
-        .code-wrapper *:before, *:after {box-sizing: border-box;}
-        .code-wrapper * {margin: 0; padding: 0;}
+        .code-wrapper * {
+            box-sizing: border-box;
+        }
+
+        .code-wrapper *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        .code-wrapper * {
+            margin: 0;
+            padding: 0;
+        }
 
         .code-wrapper {
             position: fixed;
@@ -63,6 +73,17 @@
         .buttons>button {
             margin-bottom: 10px;
             padding: 4px 8px;
+            border: none;
+            border-radius: 2px;
+            background: #fff;
+        }
+
+        .buttons>button:focus {
+            outline: none;
+        }
+
+        .buttons>button:active {
+            background: #d5d5c8;
         }</style>
 <script src="/style.e308ff8e.js"></script><link rel="stylesheet" href="/main.1f19ae8e.css"></head>
 
@@ -103,9 +124,10 @@
     <div class="buttons" id="buttons">
         <button id="btnPlay">播放</button>
         <button id="btnPause">暂停</button>
-        <button id="btnNormal">常规</button>
+        <button id="btnNormal">匀速</button>
         <button id="btnFast">快速</button>
         <button id="btnSkipAnima">跳过动画</button>
+        <button id="btnReset">重播</button>
     </div>
     <script src="/main.1f19ae8e.js"></script>
 </body>
