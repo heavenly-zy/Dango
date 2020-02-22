@@ -1,4 +1,6 @@
 import string from './css.js'
+import '../vendor/prism/prism.js'
+import '../vendor/prism/prism.css'
 
 const player = {
     id: undefined,
@@ -36,9 +38,7 @@ const player = {
             window.clearInterval(player.id)
             return
         }
-        player.view.codeWrapper.scrollTop = codeWrapper.scrollHeight
-        player.view.code.innerText = string.slice(0, player.n)
-        player.view.styleTag.innerHTML = string.slice(0, player.n)
+        player.writeCode(player.n)
     },
     play: () => {
         player.pause()
@@ -59,10 +59,15 @@ const player = {
     },
     skipAnima: () => {
         player.pause()
-        player.view.code.innerText = string
-        player.view.styleTag.innerHTML = string
+        player.n = string.length
+        player.writeCode(player.n)
+    },
+    writeCode: (stringLength) => {
+        player.view.code.innerHTML = Prism.highlight(string.slice(0, stringLength), Prism.languages.css);
+        player.view.styleTag.innerHTML = string.slice(0, stringLength)
         player.view.codeWrapper.scrollTop = codeWrapper.scrollHeight
     }
 }
+
 
 player.init()

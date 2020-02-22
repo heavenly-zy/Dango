@@ -117,17 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"css.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var string = "\n/*CSS reset*/\n.preview-wrapper * {box-sizing: border-box;}\n.preview-wrapper *:before, *:after {box-sizing: border-box;}\n.preview-wrapper * {margin: 0; padding: 0;}\nul, ol { list-style: none; }\na {color: inherit; text-decoration: none;}\nimg {max-width: 100%; max-height: 100%;}\n\n/*\u80CC\u666F*/\n.preview-wrapper {\n    background: #fee7d7;\n    color: #ffa264;\n    font-weight: 700\n}\n\n.container {\n    margin: 70px auto;\n    width: 425px;\n    position: relative;\n}\n\n/*\u5730\u677F*/\n.container:before {\n    content: '';\n    position: absolute;\n    width: 600px;\n    height: 400px;\n    background: #ffc99b;\n    border-radius: 100%;\n    bottom: -170px;\n    margin-left: -80px;\n    transform: rotateX(70deg);\n}\n\n/*\u611F\u53F9\u53F7*/\n.container .exclamationmark {\n    position: absolute;\n    font-size: 70px;\n    top: -50px;\n    right: -40px;\n}\n\n/*zzz...*/\n.container .sleep {\n    position: absolute;\n    font-size: 40px;\n    top: -50px;\n    left: -60px;\n}\n\n.dango {\n    width: 254px;\n    height: 154px;\n    border-radius: 250px 250px 100px 100px;\n    margin-top: -20px;\n    position: relative;\n}\n\n/*\u7D2B\u8272\u7684\u56E2\u5B50*/\n.dango.purple {\n    border: 7px solid #bd9ad2;\n    background: #d0b7ee;\n    animation: wiggle 5s infinite;\n    transform-origin: center bottom;\n    z-index: 5;\n    margin-left: 110px;\n}\n\n/*\u7EFF\u8272\u7684\u56E2\u5B50*/\n.dango.green {\n    border: 7px solid #7bc590;\n    background: #b9eed0;\n    animation: wiggle 4.5s infinite;\n    transform-origin: center bottom;\n    z-index: 4;\n    margin-left: 50px;\n}\n\n/*\u84DD\u8272\u7684\u56E2\u5B50*/\n.dango.blue {\n    border: 7px solid #7fbbdf;\n    background: #cef1f3;\n    animation: wiggle 3.5s infinite;\n    transform-origin: center bottom;\n    z-index: 3;\n    margin-left: 13px;\n}\n\n/*\u84DD\u8272\u7684\u56E2\u5B50\u4F1A\u7728\u773C*/\n.dango.blue .blink {\n    animation: blink 5s infinite;\n    transform-origin: center bottom;\n}\n\n.dango.blue .blink:before {\n    animation: blinkBefore 5s infinite;\n    transform-origin: center bottom;\n}\n\n/*\u7C89\u8272\u7684\u56E2\u5B50*/\n.dango.pink {\n    border: 7px solid #ffa5b6;\n    background: #ffd2dc;\n    animation: wiggle 4s infinite;\n    transform-origin: center bottom;\n    z-index: 2;\n    margin-left: 10px;\n}\n\n.dango.pink .blink {\n    animation: blink 3.2s infinite;\n    transform-origin: center bottom;\n}\n\n/*\u7C89\u8272\u7684\u56E2\u5B50\u4F1A\u7728\u773C*/\n.dango.pink .blink:before {\n    animation: blinkBefore 3.2s infinite;\n    transform-origin: center bottom;\n}\n\n/*\u9EC4\u8272\u7684\u56E2\u5B50*/\n.dango.yellow {\n    border: 7px solid #ffb351;\n    background: #fff1b0;\n    animation: wiggle 8s infinite;\n    transform-origin: center bottom;\n    z-index: 1;\n}\n\n/*\u9EC4\u8272\u7684\u56E2\u5B50\u4F1A\u7728\u773C*/\n.dango.yellow .blink {\n    animation: blink 4s infinite;\n    transform-origin: center bottom;\n}\n\n.dango.yellow .blink:before {\n    animation: blinkBefore 4s infinite;\n    transform-origin: center bottom;\n}\n\n.dango .eyes {\n    position: absolute;\n    top: 20px;\n    left: 100px;\n    width: 5px;\n    height: 50px;\n    background: #4e4e4e;\n    display: block;\n    border-radius: 10px;\n}\n\n.dango .eyes:before {\n    border-radius: 10px;\n    content: '';\n    left: 40px;\n    width: 5px;\n    height: 50px;\n    position: absolute;\n    background: #4e4e4e;\n}\n\n.dango .eyes.squint {\n    transform: rotate(-35deg);\n    height: 25px;\n}\n\n.dango .eyes.squint:before {\n    top: 16px;\n    left: -9px;\n    height: 25px;\n    transform: rotate(60deg);\n}\n\n.dango .eyes.squint.second {\n    left: 130px;\n    top: 35px;\n    transform: rotate(160deg);\n}\n\n/*\u7EFF\u8272\u7684\u56E2\u5B50\u5728\u7761\u89C9*/\n.dango .sleepeyes {\n    width: 50px;\n    height: 5px;\n    position: absolute;\n    background: #4e4e4e;\n    border-radius: 10px;\n    top: 40px;\n    left: 60px;\n}\n\n.dango .sleepeyes:before {\n    content: '';\n    width: 50px;\n    height: 5px;\n    position: absolute;\n    background: #4e4e4e;\n    border-radius: 10px;\n    left: 85px;\n}\n\n/*\u56E2\u5B50\u8138\u4E0A\u7684\u7EA2\u6655*/\n.dango .blush {\n    height: 35px;\n    width: 35px;\n    position: absolute;\n    top: 60px;\n    left: 50px;\n    background: #ff9cb0;\n    border-radius: 100%;\n}\n\n.dango .blush:before {\n    content: '';\n    height: 35px;\n    width: 35px;\n    position: absolute;\n    left: 105px;\n    background: #ff9cb0;\n    border-radius: 100%;\n}\n\n/*\u52A8\u753B*/\n@keyframes blink {\n\n    0%,\n    20%,\n    100% {\n        height: 50px;\n        width: 5px;\n        top: 20px;\n        left: 100px;\n    }\n\n    10% {\n        height: 5px;\n        top: 50px;\n        width: 20px;\n        left: 93px;\n    }\n}\n\n@keyframes blinkBefore {\n\n    0%,\n    20%,\n    100% {\n        height: 50px;\n        width: 5px;\n    }\n\n    10% {\n        height: 5px;\n        width: 20px;\n    }\n}\n\n@keyframes wiggle {\n\n    0%,\n    100% {\n        transform: rotate(0deg);\n    }\n\n    20% {\n        transform: rotate(5deg);\n    }\n\n    60% {\n        transform: rotate(-4deg);\n    }\n}\n";
-var _default = string;
-exports.default = _default;
-},{}],"../vendor/prism/prism.js":[function(require,module,exports) {
+})({"../vendor/prism/prism.js":[function(require,module,exports) {
 var global = arguments[3];
 /* PrismJS 1.19.0
 https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript */
@@ -996,162 +986,7 @@ if (Prism.languages.markup) {
 }
 
 Prism.languages.js = Prism.languages.javascript;
-},{}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../vendor/prism/prism.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
-"use strict";
-
-var _css = _interopRequireDefault(require("./css.js"));
-
-require("../vendor/prism/prism.js");
-
-require("../vendor/prism/prism.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var player = {
-  id: undefined,
-  n: 1,
-  time: 50,
-  view: {
-    codeWrapper: document.getElementById('codeWrapper'),
-    code: document.getElementById('code'),
-    styleTag: document.getElementById('styleTag')
-  },
-  events: {
-    // 表驱动编程
-    '#btnPlay': 'play',
-    '#btnPause': 'pause',
-    '#btnNormal': 'normal',
-    '#btnFast': 'fast',
-    '#btnSkipAnima': 'skipAnima'
-  },
-  init: function init() {
-    player.view.code.innerText = _css.default.slice(0, player.n);
-    player.view.styleTag.innerHTML = _css.default.slice(0, player.n);
-    player.bindEvents();
-    player.play();
-  },
-  bindEvents: function bindEvents() {
-    for (var key in player.events) {
-      if (player.events.hasOwnProperty(key)) {
-        // 保证只遍历events的自身属性
-        var value = player.events[key]; // 'play'、'pause'、'slow'...
-
-        document.querySelector(key).onclick = player[value];
-      }
-    }
-  },
-  run: function run() {
-    player.n += 1;
-
-    if (player.n > _css.default.length) {
-      window.clearInterval(player.id);
-      return;
-    }
-
-    player.writeCode(player.n);
-  },
-  play: function play() {
-    player.pause();
-    player.id = setInterval(player.run, player.time);
-  },
-  pause: function pause() {
-    window.clearInterval(player.id);
-  },
-  normal: function normal() {
-    player.pause();
-    player.time = 50;
-    player.play();
-  },
-  fast: function fast() {
-    player.pause();
-    player.time = 0;
-    player.play();
-  },
-  skipAnima: function skipAnima() {
-    player.pause();
-    player.n = _css.default.length;
-    player.writeCode(player.n);
-  },
-  writeCode: function writeCode(stringLength) {
-    player.view.code.innerHTML = Prism.highlight(_css.default.slice(0, stringLength), Prism.languages.css);
-    player.view.styleTag.innerHTML = _css.default.slice(0, stringLength);
-    player.view.codeWrapper.scrollTop = codeWrapper.scrollHeight;
-  }
-};
-player.init();
-},{"./css.js":"css.js","../vendor/prism/prism.js":"../vendor/prism/prism.js","../vendor/prism/prism.css":"../vendor/prism/prism.css"}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1355,5 +1190,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
-//# sourceMappingURL=/main.1f19ae8e.js.map
+},{}]},{},["../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../vendor/prism/prism.js"], null)
+//# sourceMappingURL=/prism.5bd05bf3.js.map
