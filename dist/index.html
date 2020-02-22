@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>dango</title>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+    <style>/*CSS reset*/
+        .code-wrapper * {box-sizing: border-box;}
+        .code-wrapper *:before, *:after {box-sizing: border-box;}
+        .code-wrapper * {margin: 0; padding: 0;}
+
+        .code-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            background-color: lightgray;
+            width: 10px;
+            height: 10px;
+            background-clip: padding-box;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #aaa;
+            border-radius: 5px;
+        }
+
+        #styleTag {
+            display: none;
+        }
+
+        .preview-wrapper {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .buttons {
+            position: fixed;
+            right: 52%;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .buttons>button {
+            margin-bottom: 10px;
+            padding: 4px 8px;
+        }</style>
+<script src="/style.e308ff8e.js"></script></head>
+
+<body>
+    <div class="code-wrapper" id="codeWrapper">
+        <pre id="code"></pre>
+    </div>
+
+    <style id="styleTag"></style>
+
+    <div class="preview-wrapper">
+        <div class="preview">
+            <div class="container">
+                <div class="dango purple">
+                    <span class="eyes squint"></span>
+                    <span class="eyes squint second"></span>
+                    <span class="exclamationmark">!</span>
+                </div>
+                <div class="dango green">
+                    <span class="sleepeyes"></span>
+                    <span class="blush"></span>
+                    <span class="sleep">ZZZ...</span>
+                </div>
+                <div class="dango blue">
+                    <span class="eyes blink"></span>
+                </div>
+                <div class="dango pink">
+                    <span class="eyes blink"></span>
+                </div>
+                <div class="dango yellow">
+                    <span class="eyes blink"></span>
+                    <span class="blush"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons" id="buttons">
+        <button id="btnPlay">播放</button>
+        <button id="btnPause">暂停</button>
+        <button id="btnNormal">常规</button>
+        <button id="btnFast">快速</button>
+        <button id="btnSkipAnima">跳过动画</button>
+    </div>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+
+</html>
