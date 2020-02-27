@@ -5,7 +5,7 @@ import '../vendor/prism/prism.css'
 const player = {
     id: undefined,
     n: 1,
-    time: 50,
+    time: 0,
     view: {
         codeWrapper: document.getElementById('codeWrapper'),
         code: document.getElementById('code'),
