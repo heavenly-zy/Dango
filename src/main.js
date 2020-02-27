@@ -8,7 +8,7 @@ let string = pageWidth >= 650 ? stringP : stringM
 const player = {
     id: undefined,
     n: 1,
-    time: 0,
+    time: pageWidth >= 650 ? 50 : 0,
     view: {
         codeWrapper: document.getElementById('codeWrapper'),
         code: document.getElementById('code'),

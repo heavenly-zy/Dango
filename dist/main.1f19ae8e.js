@@ -1095,7 +1095,7 @@ var string = pageWidth >= 650 ? _pc.default : _mobile.default;
 var player = {
   id: undefined,
   n: 1,
-  time: 0,
+  time: pageWidth >= 650 ? 50 : 0,
   view: {
     codeWrapper: document.getElementById('codeWrapper'),
     code: document.getElementById('code'),
