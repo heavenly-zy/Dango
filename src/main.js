@@ -1,6 +1,9 @@
-import string from './css.js'
+import stringM from './css-string/mobile.js'
+import stringP from './css-string/pc.js'
 import '../vendor/prism/prism.js'
 import '../vendor/prism/prism.css'
+
+let string = pageWidth >= 650 ? stringP : stringM
 
 const player = {
     id: undefined,
@@ -64,8 +67,8 @@ const player = {
         player.writeCode(player.n)
     },
     reset: () => {
-       player.n = 1
-       player.play()
+        player.n = 1
+        player.play()
     },
     writeCode: (stringLength) => {
         player.view.code.innerHTML = Prism.highlight(string.slice(0, stringLength), Prism.languages.css);

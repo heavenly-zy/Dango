@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"css.js":[function(require,module,exports) {
+})({"css-string/mobile.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -125,6 +125,16 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var string = "\n  /*CSS reset*/\n  .preview-wrapper * {box-sizing: border-box;}\n  .preview-wrapper *:before, *:after {box-sizing: border-box;}\n  .preview-wrapper * {margin: 0; padding: 0;}\n  ul, ol { list-style: none; }\n  a {color: inherit; text-decoration: none;}\n  img {max-width: 100%; max-height: 100%;}\n  \n  .preview-wrapper {\n    background: #fee7d7;\n    color: #ffa264;\n    font-weight: 700;\n  }\n  \n  .container {\n    margin: 1.07692rem auto;\n    width: 6.53846rem;\n    position: relative;\n  }\n  \n  .container:before {\n    content: '';\n    position: absolute;\n    border-radius: 100%;\n    bottom: -2.61538rem;\n    margin-left: -1.38462rem;\n    width: 9.23077rem;\n    height: 6.15385rem;\n    background: #ffc99b;\n    transform: rotateX(70deg);\n  }\n  \n  .container .exclamationmark {\n    font-size: 1.07692rem;\n    position: absolute;\n    top: -0.76923rem;\n    right: -0.61538rem;\n  }\n  \n  .container .sleep {\n    font-size: 0.61538rem;\n    position: absolute;\n    top: -0.76923rem;\n    left: -0.92308rem;\n  }\n  \n  .dango {\n    width: 3.90769rem;\n    height: 2.36923rem;\n    border-radius: 3.84615rem 3.84615rem 1.53846rem 1.53846rem;\n    position: relative;\n    margin-top: -0.30769rem;\n  }\n  \n  .dango .eyes {\n    position: absolute;\n    top: 0.30769rem;\n    left: 1.53846rem;\n    width: 0.07692rem;\n    height: 0.76923rem;\n    background: #4e4e4e;\n    display: block;\n    border-radius: 0.15385rem;\n  }\n  \n  .dango .eyes:before {\n    border-radius: 0.15385rem;\n    content: '';\n    left: 0.61538rem;\n    width: 0.07692rem;\n    height: 0.76923rem;\n    position: absolute;\n    background: #4e4e4e;\n  }\n  \n  .dango .eyes.squint {\n    transform: rotate(-35deg);\n    height: 0.38462rem;\n  }\n  \n  .dango .eyes.squint:before {\n    top: 0.24615rem;\n    left: -0.13846rem;\n    height: 0.38462rem;\n    transform: rotate(60deg);\n  }\n  \n  .dango .eyes.squint.second {\n    left: 2rem;\n    top: 0.53846rem;\n    transform: rotate(160deg);\n  }\n  \n  .dango .sleepeyes {\n    width: 0.76923rem;\n    height: 0.07692rem;\n    position: absolute;\n    background: #4e4e4e;\n    border-radius: 0.15385rem;\n    top: 0.61538rem;\n    left: 0.92308rem;\n  }\n  \n  .dango .sleepeyes:before {\n    content: '';\n    width: 0.76923rem;\n    height: 0.07692rem;\n    position: absolute;\n    background: #4e4e4e;\n    border-radius: 0.15385rem;\n    left: 1.30769rem;\n  }\n  \n  .dango .blush {\n    height: 0.53846rem;\n    width: 0.53846rem;\n    position: absolute;\n    top: 0.92308rem;\n    left: 0.76923rem;\n    background: #ff9cb0;\n    border-radius: 100%;\n  }\n  \n  .dango .blush:before {\n    content: '';\n    height: 0.53846rem;\n    width: 0.53846rem;\n    position: absolute;\n    left: 1.61538rem;\n    background: #ff9cb0;\n    border-radius: 100%;\n  }\n  \n  .dango.minX1 {\n    transform: scale(0.5);\n  }\n  \n  .dango.minX2 {\n    transform: scale(0.25);\n  }\n  \n  @keyframes blink {\n  \n    0%,\n    20%,\n    100% {\n      height: 0.76923rem;\n      width: 0.07692rem;\n      top: 0.30769rem;\n      left: 1.53846rem;\n    }\n  \n    10% {\n      height: 0.07692rem;\n      top: 0.76923rem;\n      width: 0.30769rem;\n      left: 1.43077rem;\n    }\n  }\n  \n  @keyframes blinkBefore {\n  \n    0%,\n    20%,\n    100% {\n      height: 0.76923rem;\n      width: 0.07692rem;\n    }\n  \n    10% {\n      height: 0.07692rem;\n      width: 0.30769rem;\n    }\n  }\n  \n  @keyframes wiggle {\n  \n    0%,\n    100% {\n      transform: rotate(0deg);\n    }\n  \n    20% {\n      transform: rotate(5deg);\n    }\n  \n    60% {\n      transform: rotate(-4deg);\n    }\n  }\n  \n  .dango.purple {\n    border: 0.10769rem solid #bd9ad2;\n    background: #d0b7ee;\n    animation: wiggle 5s infinite;\n    transform-origin: center bottom;\n    z-index: 5;\n    margin-left: 1.69231rem;\n  }\n  \n  .dango.green {\n    border: 0.10769rem solid #7bc590;\n    background: #b9eed0;\n    animation: wiggle 4.5s infinite;\n    transform-origin: center bottom;\n    z-index: 4;\n    margin-left: 0.76923rem;\n  }\n  \n  .dango.blue {\n    border: 0.10769rem solid #7fbbdf;\n    background: #cef1f3;\n    animation: wiggle 3.5s infinite;\n    transform-origin: center bottom;\n    z-index: 3;\n    margin-left: 0.2rem;\n  }\n  \n  .dango.blue .blink {\n    animation: blink 5s infinite;\n    transform-origin: center bottom;\n  }\n  \n  .dango.blue .blink:before {\n    animation: blinkBefore 5s infinite;\n    transform-origin: center bottom;\n  }\n  \n  .dango.pink {\n    border: 0.10769rem solid #ffa5b6;\n    background: #ffd2dc;\n    animation: wiggle 4s infinite;\n    transform-origin: center bottom;\n    z-index: 2;\n    margin-left: 0.15385rem;\n  }\n  \n  .dango.pink .blink {\n    animation: blink 3.2s infinite;\n    transform-origin: center bottom;\n  }\n  \n  .dango.pink .blink:before {\n    animation: blinkBefore 3.2s infinite;\n    transform-origin: center bottom;\n  }\n  \n  .dango.yellow {\n    border: 0.10769rem solid #ffb351;\n    background: #fff1b0;\n    animation: wiggle 8s infinite;\n    transform-origin: center bottom;\n    z-index: 1;\n  }\n  \n  .dango.yellow .blink {\n    animation: blink 4s infinite;\n    transform-origin: center bottom;\n  }\n  \n  .dango.yellow .blink:before {\n    animation: blinkBefore 4s infinite;\n    transform-origin: center bottom;\n  }\n";
+var _default = string;
+exports.default = _default;
+},{}],"css-string/pc.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var string = "\n/*CSS reset*/\n.preview-wrapper * {box-sizing: border-box;}\n.preview-wrapper *:before, *:after {box-sizing: border-box;}\n.preview-wrapper * {margin: 0; padding: 0;}\nul, ol { list-style: none; }\na {color: inherit; text-decoration: none;}\nimg {max-width: 100%; max-height: 100%;}\n\n/*\u80CC\u666F*/\n.preview-wrapper {\n    background: #fee7d7;\n    color: #ffa264;\n    font-weight: 700\n}\n\n.container {\n    margin: 70px auto;\n    width: 425px;\n    position: relative;\n}\n\n/*\u5730\u677F*/\n.container:before {\n    content: '';\n    position: absolute;\n    width: 600px;\n    height: 400px;\n    background: #ffc99b;\n    border-radius: 100%;\n    bottom: -170px;\n    margin-left: -80px;\n    transform: rotateX(70deg);\n}\n\n/*\u611F\u53F9\u53F7*/\n.container .exclamationmark {\n    position: absolute;\n    font-size: 70px;\n    top: -50px;\n    right: -40px;\n}\n\n/*zzz...*/\n.container .sleep {\n    position: absolute;\n    font-size: 40px;\n    top: -50px;\n    left: -60px;\n}\n\n.dango {\n    width: 254px;\n    height: 154px;\n    border-radius: 250px 250px 100px 100px;\n    margin-top: -20px;\n    position: relative;\n}\n\n/*\u7D2B\u8272\u7684\u56E2\u5B50*/\n.dango.purple {\n    border: 7px solid #bd9ad2;\n    background: #d0b7ee;\n    animation: wiggle 5s infinite;\n    transform-origin: center bottom;\n    z-index: 5;\n    margin-left: 110px;\n}\n\n/*\u7EFF\u8272\u7684\u56E2\u5B50*/\n.dango.green {\n    border: 7px solid #7bc590;\n    background: #b9eed0;\n    animation: wiggle 4.5s infinite;\n    transform-origin: center bottom;\n    z-index: 4;\n    margin-left: 50px;\n}\n\n/*\u84DD\u8272\u7684\u56E2\u5B50*/\n.dango.blue {\n    border: 7px solid #7fbbdf;\n    background: #cef1f3;\n    animation: wiggle 3.5s infinite;\n    transform-origin: center bottom;\n    z-index: 3;\n    margin-left: 13px;\n}\n\n/*\u84DD\u8272\u7684\u56E2\u5B50\u4F1A\u7728\u773C*/\n.dango.blue .blink {\n    animation: blink 5s infinite;\n    transform-origin: center bottom;\n}\n\n.dango.blue .blink:before {\n    animation: blinkBefore 5s infinite;\n    transform-origin: center bottom;\n}\n\n/*\u7C89\u8272\u7684\u56E2\u5B50*/\n.dango.pink {\n    border: 7px solid #ffa5b6;\n    background: #ffd2dc;\n    animation: wiggle 4s infinite;\n    transform-origin: center bottom;\n    z-index: 2;\n    margin-left: 10px;\n}\n\n.dango.pink .blink {\n    animation: blink 3.2s infinite;\n    transform-origin: center bottom;\n}\n\n/*\u7C89\u8272\u7684\u56E2\u5B50\u4F1A\u7728\u773C*/\n.dango.pink .blink:before {\n    animation: blinkBefore 3.2s infinite;\n    transform-origin: center bottom;\n}\n\n/*\u9EC4\u8272\u7684\u56E2\u5B50*/\n.dango.yellow {\n    border: 7px solid #ffb351;\n    background: #fff1b0;\n    animation: wiggle 8s infinite;\n    transform-origin: center bottom;\n    z-index: 1;\n}\n\n/*\u9EC4\u8272\u7684\u56E2\u5B50\u4F1A\u7728\u773C*/\n.dango.yellow .blink {\n    animation: blink 4s infinite;\n    transform-origin: center bottom;\n}\n\n.dango.yellow .blink:before {\n    animation: blinkBefore 4s infinite;\n    transform-origin: center bottom;\n}\n\n.dango .eyes {\n    position: absolute;\n    top: 20px;\n    left: 100px;\n    width: 5px;\n    height: 50px;\n    background: #4e4e4e;\n    display: block;\n    border-radius: 10px;\n}\n\n.dango .eyes:before {\n    border-radius: 10px;\n    content: '';\n    left: 40px;\n    width: 5px;\n    height: 50px;\n    position: absolute;\n    background: #4e4e4e;\n}\n\n.dango .eyes.squint {\n    transform: rotate(-35deg);\n    height: 25px;\n}\n\n.dango .eyes.squint:before {\n    top: 16px;\n    left: -9px;\n    height: 25px;\n    transform: rotate(60deg);\n}\n\n.dango .eyes.squint.second {\n    left: 130px;\n    top: 35px;\n    transform: rotate(160deg);\n}\n\n/*\u7EFF\u8272\u7684\u56E2\u5B50\u5728\u7761\u89C9*/\n.dango .sleepeyes {\n    width: 50px;\n    height: 5px;\n    position: absolute;\n    background: #4e4e4e;\n    border-radius: 10px;\n    top: 40px;\n    left: 60px;\n}\n\n.dango .sleepeyes:before {\n    content: '';\n    width: 50px;\n    height: 5px;\n    position: absolute;\n    background: #4e4e4e;\n    border-radius: 10px;\n    left: 85px;\n}\n\n/*\u56E2\u5B50\u8138\u4E0A\u7684\u7EA2\u6655*/\n.dango .blush {\n    height: 35px;\n    width: 35px;\n    position: absolute;\n    top: 60px;\n    left: 50px;\n    background: #ff9cb0;\n    border-radius: 100%;\n}\n\n.dango .blush:before {\n    content: '';\n    height: 35px;\n    width: 35px;\n    position: absolute;\n    left: 105px;\n    background: #ff9cb0;\n    border-radius: 100%;\n}\n\n/*\u52A8\u753B*/\n@keyframes blink {\n\n    0%,\n    20%,\n    100% {\n        height: 50px;\n        width: 5px;\n        top: 20px;\n        left: 100px;\n    }\n\n    10% {\n        height: 5px;\n        top: 50px;\n        width: 20px;\n        left: 93px;\n    }\n}\n\n@keyframes blinkBefore {\n\n    0%,\n    20%,\n    100% {\n        height: 50px;\n        width: 5px;\n    }\n\n    10% {\n        height: 5px;\n        width: 20px;\n    }\n}\n\n@keyframes wiggle {\n\n    0%,\n    100% {\n        transform: rotate(0deg);\n    }\n\n    20% {\n        transform: rotate(5deg);\n    }\n\n    60% {\n        transform: rotate(-4deg);\n    }\n}\n\n";
 var _default = string;
 exports.default = _default;
 },{}],"../vendor/prism/prism.js":[function(require,module,exports) {
@@ -1071,7 +1081,9 @@ module.hot.accept(reloadCSS);
 },{"_css_loader":"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
 "use strict";
 
-var _css = _interopRequireDefault(require("./css.js"));
+var _mobile = _interopRequireDefault(require("./css-string/mobile.js"));
+
+var _pc = _interopRequireDefault(require("./css-string/pc.js"));
 
 require("../vendor/prism/prism.js");
 
@@ -1079,6 +1091,7 @@ require("../vendor/prism/prism.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var string = pageWidth >= 650 ? _pc.default : _mobile.default;
 var player = {
   id: undefined,
   n: 1,
@@ -1098,8 +1111,8 @@ var player = {
     '#btnReset': 'reset'
   },
   init: function init() {
-    player.view.code.innerText = _css.default.slice(0, player.n);
-    player.view.styleTag.innerHTML = _css.default.slice(0, player.n);
+    player.view.code.innerText = string.slice(0, player.n);
+    player.view.styleTag.innerHTML = string.slice(0, player.n);
     player.bindEvents();
     player.play();
   },
@@ -1116,7 +1129,7 @@ var player = {
   run: function run() {
     player.n += 1;
 
-    if (player.n > _css.default.length) {
+    if (player.n > string.length) {
       window.clearInterval(player.id);
       return;
     }
@@ -1142,7 +1155,7 @@ var player = {
   },
   skipAnima: function skipAnima() {
     player.pause();
-    player.n = _css.default.length;
+    player.n = string.length;
     player.writeCode(player.n);
   },
   reset: function reset() {
@@ -1150,13 +1163,13 @@ var player = {
     player.play();
   },
   writeCode: function writeCode(stringLength) {
-    player.view.code.innerHTML = Prism.highlight(_css.default.slice(0, stringLength), Prism.languages.css);
-    player.view.styleTag.innerHTML = _css.default.slice(0, stringLength);
+    player.view.code.innerHTML = Prism.highlight(string.slice(0, stringLength), Prism.languages.css);
+    player.view.styleTag.innerHTML = string.slice(0, stringLength);
     player.view.codeWrapper.scrollTop = codeWrapper.scrollHeight;
   }
 };
 player.init();
-},{"./css.js":"css.js","../vendor/prism/prism.js":"../vendor/prism/prism.js","../vendor/prism/prism.css":"../vendor/prism/prism.css"}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./css-string/mobile.js":"css-string/mobile.js","./css-string/pc.js":"css-string/pc.js","../vendor/prism/prism.js":"../vendor/prism/prism.js","../vendor/prism/prism.css":"../vendor/prism/prism.css"}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

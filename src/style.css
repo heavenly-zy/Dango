@@ -78,7 +78,7 @@
     background: #d5d5c8;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     .preview-wrapper {
         position: fixed;
         top: 0;
