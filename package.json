@@ -1,0 +1,11 @@
+{
+  "name": "dango",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:heavenly-zy/dango.git",
+  "author": "zy <1457715339@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

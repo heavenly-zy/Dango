@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body {
+    background: #fee7d7;
+    font-family: 'Oswald', sans-serif;
+    color: #ffa264;
+    font-weight: 700;
+}
+
+.container {
+    margin: 70px auto;
+    width: 425px;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        border-radius: 100%;
+        bottom: -170px;
+        margin-left: -80px;
+        width: 600px;
+        height: 400px;
+        background: #ffc99b;
+        transform: rotateX(70deg);
+    }
+
+    .exclamationmark {
+        font-size: 70px;
+        position: absolute;
+        top: -50px;
+        right: -40px;
+    }
+
+    .sleep {
+        font-size: 40px;
+        position: absolute;
+        top: -50px;
+        left: -60px;
+    }
+}
+
+.dango {
+    width: 254px;
+    height: 154px;
+    border-radius: 250px 250px 100px 100px;
+    position: relative;
+    margin-top: -20px;
+
+    //dem eyes
+    .eyes {
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        width: 5px;
+        height: 50px;
+        background: #4e4e4e;
+        display: block;
+        border-radius: 10px;
+
+        &:before {
+            border-radius: 10px;
+            content: '';
+            left: 40px;
+            width: 5px;
+            height: 50px;
+            position: absolute;
+            background: #4e4e4e;
+        }
+
+
+
+        //CRAP! needs more skew and work
+        &.squint {
+            transform: rotate(-35deg);
+            height: 25px;
+
+            &:before {
+                top: 16px;
+                left: -9px;
+                height: 25px;
+                transform: rotate(60deg);
+            }
+
+            &.second {
+                left: 130px;
+                top: 35px;
+                transform: rotate(160deg);
+            }
+        }
+    }
+
+    //sleepy eyes, goodnight dango
+    .sleepeyes {
+        width: 50px;
+        height: 5px;
+        position: absolute;
+        background: #4e4e4e;
+        border-radius: 10px;
+        top: 40px;
+        left: 60px;
+
+        &:before {
+            content: '';
+            width: 50px;
+            height: 5px;
+            position: absolute;
+            background: #4e4e4e;
+            border-radius: 10px;
+            left: 85px;
+        }
+    }
+
+    //add a span blush, for well, a blush
+    .blush {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        background: #ff9cb0;
+        border-radius: 100%;
+
+        &:before {
+            content: '';
+            height: 35px;
+            width: 35px;
+            position: absolute;
+            left: 105px;
+            background: #ff9cb0;
+            border-radius: 100%;
+        }
+    }
+
+    //helper classes to scale the dango
+    &.minX1 {
+        transform: scale(0.5);
+    }
+
+    &.minX2 {
+        transform: scale(0.25);
+    }
+}
+
+
+@keyframes blink {
+
+    0%,
+    20%,
+    100% {
+        height: 50px;
+        width: 5px;
+        top: 20px;
+        left: 100px;
+    }
+
+    10% {
+        height: 5px;
+        top: 50px;
+        width: 20px;
+        left: 93px;
+    }
+}
+
+@keyframes blinkBefore {
+
+    0%,
+    20%,
+    100% {
+        height: 50px;
+        width: 5px;
+    }
+
+    10% {
+        height: 5px;
+        width: 20px;
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(5deg);
+    }
+
+    60% {
+        transform: rotate(-4deg);
+    }
+}
+
+.dango.purple {
+    border: 7px solid #bd9ad2;
+    background: #d0b7ee;
+    animation: wiggle 5s infinite;
+    transform-origin: center bottom;
+    z-index: 5;
+    margin-left: 110px;
+}
+
+.dango.green {
+    border: 7px solid #7bc590;
+    background: #b9eed0;
+    animation: wiggle 4.5s infinite;
+    transform-origin: center bottom;
+    z-index: 4;
+    margin-left: 50px;
+}
+
+.dango.blue {
+    border: 7px solid #7fbbdf;
+    background: #cef1f3;
+    animation: wiggle 3.5s infinite;
+    transform-origin: center bottom;
+    z-index: 3;
+    margin-left: 13px;
+
+    .blink {
+        animation: blink 5s infinite;
+        transform-origin: center bottom;
+
+        &:before {
+            animation: blinkBefore 5s infinite;
+            transform-origin: center bottom;
+        }
+    }
+}
+
+.dango.pink {
+    border: 7px solid #ffa5b6;
+    background: #ffd2dc;
+    animation: wiggle 4s infinite;
+    transform-origin: center bottom;
+    z-index: 2;
+    margin-left: 10px;
+
+    .blink {
+        animation: blink 3.2s infinite;
+        transform-origin: center bottom;
+
+        &:before {
+            animation: blinkBefore 3.2s infinite;
+            transform-origin: center bottom;
+        }
+    }
+}
+
+.dango.yellow {
+    border: 7px solid #ffb351;
+    background: #fff1b0;
+    animation: wiggle 8s infinite;
+    transform-origin: center bottom;
+    z-index: 1;
+
+    .blink {
+        animation: blink 4s infinite;
+        transform-origin: center bottom;
+
+        &:before {
+            animation: blinkBefore 4s infinite;
+            transform-origin: center bottom;
+        }
+    }
+}
