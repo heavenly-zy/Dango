@@ -70,6 +70,10 @@
     background: #fff;
 }
 
+.buttons #hiddenCode {
+    display: none;
+}
+
 .buttons>button:focus {
     outline: none;
 }
@@ -117,6 +121,10 @@
     .buttons #btnPlay,
     .buttons #btnPause {
         display: none;
+    }
+
+    .buttons #hiddenCode {
+        display: block;
     }
 
     .code-wrapper.active {

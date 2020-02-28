@@ -70,6 +70,10 @@
     background: #fff;
 }
 
+.buttons #hiddenCode {
+    display: none;
+}
+
 .buttons>button:focus {
     outline: none;
 }
@@ -119,9 +123,13 @@
         display: none;
     }
 
+    .buttons #hiddenCode {
+        display: block;
+    }
+
     .code-wrapper.active {
         transform: translateY(-100%);
     }
 }
 
-/*# sourceMappingURL=style.6c76968b.css.map */
+/*# sourceMappingURL=style.6a699c5c.css.map */
