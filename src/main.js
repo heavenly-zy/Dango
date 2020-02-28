@@ -79,3 +79,8 @@ const player = {
 
 
 player.init()
+
+hiddenCode.onclick = (e) => {
+    e.target.textContent = (e.target.textContent === '显示代码' ? '隐藏代码' : '显示代码')
+    codeWrapper.classList.toggle('active')
+}

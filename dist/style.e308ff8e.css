@@ -89,6 +89,7 @@
     }
 
     .code-wrapper {
+        transition: all 2s;
         position: fixed;
         font-size: 14px;
         z-index: 99;
@@ -116,6 +117,10 @@
     .buttons #btnPlay,
     .buttons #btnPause {
         display: none;
+    }
+
+    .code-wrapper.active {
+        transform: translateY(-100%);
     }
 }
 
