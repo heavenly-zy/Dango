@@ -1,5 +1,6 @@
 const string = `
 /*CSS reset*/
+.preview-wrapper *{ transition: all 1s; }
 .preview-wrapper * {box-sizing: border-box;}
 .preview-wrapper *:before, *:after {box-sizing: border-box;}
 .preview-wrapper * {margin: 0; padding: 0;}
