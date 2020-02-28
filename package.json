@@ -7,5 +7,8 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
   }
 }
