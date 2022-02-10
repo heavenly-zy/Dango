@@ -6,7 +6,7 @@
   "author": "zy <1457715339@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
